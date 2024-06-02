@@ -67,9 +67,11 @@
 /* ++++++++ */
 .MainBox{
   background-color: #FFF3CC;
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   flex-direction: Row;
+  gap: 4px;
+  padding-right: 16px;
 }
 .sideBar{
   margin: 2px;
@@ -93,7 +95,7 @@
 }
 
 /* ++++++++++++++++++++++++++ */
-.secondBar{
+.descriptionbar{
   margin: 2px;
   padding: 5px;
   background-color:#FFFFFF;
@@ -103,8 +105,10 @@
   flex-direction: column;
   align-items: start;
   /* justify-content: space-between; */
-  border: 2px solid grey;
+  border: 1px solid #1F1F1F;
   flex-wrap: wrap;
+  border-radius: 24px;
+  padding: 10px;
 }
 .ThreeBox_Button{
   display: flex;
@@ -113,7 +117,7 @@
   flex-direction: column;
   justify-content: space-around;
 }
-.SecondbarFirstImage img{
+.descriptionImage img{
   /* display: flex;
   border-radius: 12px;
   justify-content: center; */
@@ -246,10 +250,12 @@
   padding: 5px;
   background-color:#FFFFFF;
   flex-grow: 3;
+  border: 1px solid #1F1F1F;
+  border-radius: 24px;
+  height: fit-content;
 }
 
 .ButtonName_Creatos{
-  width: 980px;
   height: 50px;
   /* border: 1px solid red  ;
   border-radius: 12px; */
@@ -332,78 +338,101 @@
 }
 
 .MainBox_ListBox{
-  width: 980px;
-  height: 180px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
   border: 1px solid #E2E2E2  ;
   border-radius: 12px;
-  padding-left: 10px;
+  padding: 16px;
+  gap: 16px;
 }
 .AlphaCreator{
-  height: 150px;
-  width:170px;
+  height: 94px;
+  width: 200px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid #E2E2E2  ;
-  border-radius: 12px;
-  padding-left: 10px;
-
+  border-radius: 8px;
+  padding: 10px;
+  gap: 10px;
 }
 .image_content{
   display: flex;
   flex-direction: row;
-  width: 180px;
-  height: 100px;
-  justify-content:center;
   align-items: center;
 
 }
+.createinfo{
+  display: flex;
+  flex-direction: column;
+}
+.faceimageSetting img{
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;;
+}
 .FacesNames{
-  width: 150px;
   display:  flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0px;
+}
+.creatorinsta{
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #808080
 }
 .flexIcons{
   display: flex;
-  justify-content: center;
   padding-right:15px ;
+}
+.flexIcons img{
+  border-radius: 23px;
 }
 .Deleverables_Box{
   display: flex;
+  width: 100%;
 }
 .DeleverablesFlex{
-  height: 170px;
   width: 150px;
   /* border: 1px solid red  ;
   border-radius: 12px; */
   padding-left: 10px;
 }
 .Deleverables{
-  height: 90px;
-  width:190px;
- 
+  width:150px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 10px
 }
-.behindHistory{
-  height: 50px;
-  width:190px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+
+.Deleverables :nth-child(1){
+  font-size: 11px;
+  font-weight: 600;
+  color: #808080;
 }
+
+.Deleverables :nth-child(2){
+  font-size: 14px;
+  font-weight: 400;
+  color:#1F1F1F;
+}
+.Deleverables :nth-child(3){
+  font-size: 14px;
+  font-weight: 400;
+  color:#1F1F1F;
+}
+
 .Followers_Pending_flex{
-  height:170px;
-  width: 590px;
   /* border: 1px solid red  ;
   border-radius: 12px; */
   padding-left: 10px;
@@ -411,11 +440,11 @@
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-
+}
+.creatordetailsinfo{
+  width: 100%;
 }
 .FolowersReach{
-  height:100px;
-  width: 570px;
   /* border: 1px solid red  ;
   border-radius: 12px; */
   padding-left: 10px;
@@ -423,7 +452,41 @@
   flex-direction: row;
   /* justify-content: center; */
   /* align-items: center; */
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.payments{
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+.payments-info :nth-child(1){
+  font-size: 11px;
+  font-weight: 500;
+  color: #808080;
+}
+.payments-info :nth-child(2){
+  font-size: 11px;
+  font-weight: 600;
+  color: #1F1F1F;
+}
+
+
+.creatorStatus{
+  height: 38px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+
+}
+.bidinghistory{
+  font-size: 13px;
+  font-weight: 600;
+  color:#1F1F1F;
+
+  /* padding-left: 30px; */
 }
 .Payment{
   height:40px;
@@ -438,19 +501,30 @@
 .FollowersData{
   height:50px;
   width: 70px;
-  /* border: 1px solid red  ;
-  border-radius: 12px; */
-  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px
 }
+.FollowersData :nth-child(1){
+  font-size: 11px;
+  font-weight: 600;
+  color: #808080;
+}
+
+.FollowersData :nth-child(2){
+  font-size: 14px;
+  font-weight: 600;
+  color:#1F1F1F;
+}
+
 .mainBoxFlexdDesign{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 790px;
-  width:1000px;
+  gap: 12px;
   background-color:#FFFFFF;
   border: 1px solid #FFF9E6  ;
   border-radius: 12px;
   padding-left: 10px;
+
 }
 

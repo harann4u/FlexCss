@@ -46,9 +46,9 @@ const Pages1 = () => {
                <img src={TopBarIcons} alt="yellow Image" height='30'/>
             </div>
             <div className='searchBar-Top'>
-               <form action="">
-                 <input type="text" placeholder='..search' />
-               </form>
+               <div className='searchBar_div'>
+                     <input type="search" placeholder='..search' />
+               </div>
             </div>
          </div>
          <div className='HeaderSecondBox'>

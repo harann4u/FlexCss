@@ -1,15 +1,12 @@
-
-
-import Pages1 from './pages/pages1'
+import AppRoutes from "./routes";
+import "./App.css";
 
 function App() {
- 
   return (
-    <div>
-        <Pages1/>
-    </div>
-    
-  )
+    <>
+      <AppRoutes />
+    </>
+  );
 }
 
-export default App
+export default App;
