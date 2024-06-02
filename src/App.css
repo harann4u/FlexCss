@@ -1,3 +1,6 @@
+/* body, html {
+  font-family: 'Montserrat', sans-serif;
+} */
 .flexContainer{
   display: flex;
   flex-direction: column;
@@ -5,15 +8,15 @@
 
 .headerBox{
   color: black;
-  background-color: greenyellow;
+  background-color: #FFF3CC;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px;
+  padding: 5px;
 }
 .HeaderFirstBox{
   padding: 15px;
-  background-color: white;
+  background-color: #FFF3CC;
   /* flex-grow: 1; */
   width: 300px;
   display: flex;
@@ -25,23 +28,45 @@
 }
 /* +++++++++++++++ Header Secon box +++++++++++++ */
 .HeaderSecondBox{
-  padding: 5px;
-   background-color: white;
-   width: 300px;
+   padding: 5px;
+   background-color: #FFF3CC;
+   width: 400px;
    display: flex;
    justify-content: space-between;
    flex-direction: row;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
 }
 .Coins{
-  display: flex;
-  justify-content: flex-start;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 1rem;
+   border:1px solid black;
+   border-radius: 15px;
+   padding: 5px;
+   height: 20px;
+   background-color: #FFFFFF;
 }
-
-
+.humanface_AutoComplete{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 1rem;
+   border:1px solid black;
+   border-radius: 15px;
+   padding: 5px;
+   height: 25px;
+}
+.humanface_AutoComplete select ,.humanface_AutoComplete img{
+  display: flex;
+  align-items: center;
+}
+.dropDownSelect{
+  border-style: none;
+}
 /* ++++++++ */
 .MainBox{
-  background-color: Red;
+  background-color: #FFF3CC;
   height: 600px;
   display: flex;
   flex-direction: Row;
@@ -49,15 +74,14 @@
 .sideBar{
   margin: 2px;
   padding: 5px;
-  background-color: aliceblue;
-  width:80px;
+  background-color: #FFF3CC;
+  width:50px;
   display:  flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* justify-content: space-around; */
 }
 .sidebarIcons{
-  background-color:#FFFFFF;
+  background-color:#FFF3CC;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -71,60 +95,362 @@
 /* ++++++++++++++++++++++++++ */
 .secondBar{
   margin: 2px;
-  /* padding: 5px; */
-  background-color:antiquewhite;
-  width:450px;
-  height: 900px;
+  padding: 5px;
+  background-color:#FFFFFF;
+  width:390px;
+  height: 1300px;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  /* justify-content: space-between; */
+  border: 2px solid grey;
+  flex-wrap: wrap;
+}
+.ThreeBox_Button{
+  display: flex;
+  height: 800px;
+  /* background-color: red; */
+  flex-direction: column;
+  justify-content: space-around;
+}
+.SecondbarFirstImage img{
+  /* display: flex;
+  border-radius: 12px;
+  justify-content: center; */
+  border-radius: 20px;
 }
 .Head_wholeText{
-  width:300;
-  height: 250px;
+  width:390px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  background-color: #FFFFFF;
+  /* border: 1px solid #E2E2E2  ;
+  border-radius: 12px;
+  padding-left: 10px; */
 }
-
-.icons-text{
-  display: flex;
-}
-.icons-bar2{
-  width:40px;
-  height: 40px;
-  background-color: blue;
-}
-.Content-bar2{
-  width:200px;
-  height: 40px;
-  background-color: red;
-}
-.textDate_container{
+.icon_header{
+  width:150px;
   display: flex;
   flex-direction: row;
+  
 }
-.icons-text{
+.lock_ContentText{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
-.loverHeartPreson_Container{
+/* +++++++++++++++++++++++++++++++++++++++++ */
+.textDate_container{
   display:  flex;
   flex-direction: row;
+  width: 200px;
+  /* background-color: red; */
+  align-items: center;
+}
+.Contennt_date{
+  width: 150px;
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.icons-text{
+    /* width: 410px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color:#FFFFFF;
+    border: 1px solid #E2E2E2  ;
+    border-radius: 12px;
+    padding-left: 10px; */
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 300px;
+  border: 1px solid #E2E2E2  ;
+  border-radius: 12px;
+  padding-left: 10px;
+  justify-content:center;
+}
+/* ++++++++++++++++++ */
+.viewreportButton{
+  width: 410px;
+  height: 41px;
+  display: flex;
+  justify-content: start;
+}
+/* ++++++++++++++++++++++++++++ */
+.loveheartPerson{
+  width:370px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-content: space-evenly; */
+  background-color: #FFF9E6;
+  border: 1px solid #E2E2E2  ;
+  border-radius: 12px;
+  padding-left: 10px;
+}
+.loverHeartPreson_Container{
+ 
+  height: 200px; ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Content_lover{
+  width: 150px;
+  display:  flex;
+  align-items: center;
+  /* background-color: red; */
+  /* justify-content: space-between; */
+  padding: 10px;
+}
+/* ++++++++++++++++++++++++++ */
+.shortListedBudget{
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 200px;
+  border: 1px solid #E2E2E2  ;
+  border-radius: 12px;
+  padding-left: 10px;
+  justify-content:center;
+ 
 }
 .shortlIstedNudget_container{
   display:  flex;
   flex-direction: row;
+  width: 200px;
+  /* background-color: red; */
+  align-items: center;
+ 
 }
+.shotlist{
+  width: 150px;
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+  
+
 /* ++++++++++++++++++++++++++++++++++++ */
 .MainBar{
   margin: 2px;
   padding: 5px;
-  background-color:aqua;
+  background-color:#FFFFFF;
   flex-grow: 3;
+}
+
+.ButtonName_Creatos{
+  width: 980px;
+  height: 50px;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.Creator_div{
+   width: 300px;
+   height: 35px;
+   border-radius: 25px;
+   border:1px solid #FFF3CC;
+   padding: 3px 5px 3px 3px;
+   display: flex;
+   background-color:#FFF3CC ;
+}
+.MediumContent{
+   padding: 6px;
+}
+.Creator_button{
+  padding: 3px;
+  width:120px;
+  border-radius:25px;
+  border: 1px solid #FFC700;
+  background-color:#FFC700;
+}
+.searchBar_fillterButton{
+  width: 980px;
+  height: 70px;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_bar{
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.search_bar input[type = "search"]{
+   flex-grow: 1;
+   padding: 5px;
+   border: 1px solid black;
+   height: 40px;
+   width:250px;
+   border-radius: 12px;
+}
+.filer_sort_buttons{
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  height: 70px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.CloseApp_ListsData{
+  width: 980px;
+  height: 50px;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Approved_Buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+  width: 500px;
+}
+
+.MainBox_ListBox{
+  width: 980px;
+  height: 180px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #E2E2E2  ;
+  border-radius: 12px;
+  padding-left: 10px;
+}
+.AlphaCreator{
+  height: 150px;
+  width:170px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #E2E2E2  ;
+  border-radius: 12px;
+  padding-left: 10px;
+
+}
+.image_content{
+  display: flex;
+  flex-direction: row;
+  width: 180px;
+  height: 100px;
+  justify-content:center;
+  align-items: center;
+
+}
+.FacesNames{
+  width: 150px;
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.flexIcons{
+  display: flex;
+  justify-content: center;
+  padding-right:15px ;
+}
+.Deleverables_Box{
+  display: flex;
+}
+.DeleverablesFlex{
+  height: 170px;
+  width: 150px;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+}
+.Deleverables{
+  height: 90px;
+  width:190px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.behindHistory{
+  height: 50px;
+  width:190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Followers_Pending_flex{
+  height:170px;
+  width: 590px;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+.FolowersReach{
+  height:100px;
+  width: 570px;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+.Payment{
+  height:40px;
+  width: 570px;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.FollowersData{
+  height:50px;
+  width: 70px;
+  /* border: 1px solid red  ;
+  border-radius: 12px; */
+  padding-left: 10px;
+}
+.mainBoxFlexdDesign{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 790px;
+  width:1000px;
+  background-color:#FFFFFF;
+  border: 1px solid #FFF9E6  ;
+  border-radius: 12px;
+  padding-left: 10px;
 }
 
